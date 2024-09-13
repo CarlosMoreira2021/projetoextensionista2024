@@ -20,14 +20,16 @@
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             width: 300px;
+            text-align: center; /* Centraliza o conteúdo do container */
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #4285F4;
+            font-size: 24px;
+            font-weight: bold;
         }
         h2 {
-            text-align: center;
             margin-bottom: 20px;
-        }
-        a{
-            text-decoration: none;
-            color: #f0f0f0;
         }
         .button-google, .button-email {
             display: block;
@@ -38,17 +40,17 @@
             cursor: pointer;
             border: none;
             border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none; /* Remove sublinhado do link */
         }
         .button-google {
             background-color: #4285F4;
-            color: white;
         }
         .button-email {
             background-color: #34A853;
-            color: white;
         }
         .link-register {
-            text-align: center;
             margin-top: 20px;
         }
         .link-register a {
@@ -63,20 +65,15 @@
 <body>
 
 <div class="container">
+    <h1>Investindo em Pensamentos, Doando Livros</h1>
     <h2>Login</h2>
-    <button class="button-google"><a href="/index.html">Entrar com Google</a></button>
-    <button class="button-email" onclick="redirectToRegister()"><a href="/index.html">Cadastrar-se com Email</a></button>
+    <a href="/index.html" class="button-google">Entrar com Google</a>
+    <a href="/index.html" class="button-email">Cadastrar-se com Email</a>
 
     <div class="link-register">
-        <p>Não tem uma conta? <a href="/cadastro.html" onclick="redirectToRegister()">Cadastre-se aqui</a></p>
+        <p>Não tem uma conta? <a href="/cadastro.html">Cadastre-se aqui</a></p>
     </div>
 </div>
-
-<script>
-    function redirectToRegister() {
-        window.location.href = 'formulario.html';  // Redireciona para o formulário de cadastro
-    }
-</script>
 
 </body>
 </html>
