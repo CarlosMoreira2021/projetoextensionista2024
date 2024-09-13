@@ -99,23 +99,51 @@
             background-color: #34A853;
             color: white;
         }
-        .button-submit,
-        .button-donate {
+        .button-submit {
             width: 100%;
             padding: 15px;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            margin-top: 10px;
-        }
-        .button-submit {
             background-color: #34A853;
             color: white;
+            margin-top: 10px;
         }
         .button-donate {
+            width: 90%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
             background-color: #F4A261;
             color: white;
+            margin-top: 10px;
+            text-decoration: none; /* Remove sublinhado do link */
+            text-align: center; /* Centraliza o texto do link */
+            display: inline-block; /* Permite o padding e outras propriedades */
+        }
+        .button-donate:hover {
+            background-color: #e38b61; /* Alterar cor ao passar o mouse */
+        }
+
+        .button-sair {
+            width: 90%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #6461f4;
+            color: white;
+            margin-top: 10px;
+            text-decoration: none; /* Remove sublinhado do link */
+            text-align: center; /* Centraliza o texto do link */
+            display: inline-block; /* Permite o padding e outras propriedades */
+        }
+        .button-sair:hover {
+            background-color: #6461f4; /* Alterar cor ao passar o mouse */
         }
         footer {
             background-color: #f0f0f0;
@@ -135,15 +163,16 @@
     <!-- Painel Lateral -->
     <div class="left-panel">
         <div class="user-info">
-            <h2>Bem-vindo, Carlos Eduardo</h2>
-            <p>Ranking: 1500 pontos</p>
+            <h2>Bem-vindo Leitor</h2>
+            <p>Seu Ranking: 1500 pontos</p>
         </div>
 
         <!-- Botão para enviar livros escolhidos -->
         <button class="button-submit" onclick="submitBooks()">Enviar Livros Escolhidos</button>
 
-        <!-- Novo Botão "Doe Livros" -->
-        <button class="button-donate" onclick="donateBooks()">Doe Livros</button>
+        <!-- Novo Link "Doe Livros" -->
+        <a href="doar.html" class="button-donate">Doe livros</a>
+        <a href="login.html" class="button-sair">Sair</a>
     </div>
 
     <!-- Lista de Livros -->
@@ -206,7 +235,7 @@
                 </div>
                 <div class="format-buttons">
                     <button class="pdf-button" onclick="selectFormat('${book}', 'PDF')">PDF</button>
-                    <button class="physical-button" onclick="selectFormat('${book}', 'Mídia Física')">Mídia Física</button>
+                    <button class="physical-button" onclick="selectFormat('${book}', 'Livro Físico')">Livro físico</button>
                 </div>
             `;
             booksContainer.appendChild(bookItem);
@@ -258,11 +287,6 @@
         });
 
         alert('Livros selecionados: ' + selectedBooks.join(', '));
-    }
-
-    // Função para doação de livros
-    function donateBooks() {
-        alert("Obrigado por querer doar livros! Por favor, entre em contato conosco para mais informações.");
     }
 </script>
 
