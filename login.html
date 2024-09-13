@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #f0f0f0;
+        }
+        .button-google, .button-email {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .button-google {
+            background-color: #4285F4;
+            color: white;
+        }
+        .button-email {
+            background-color: #34A853;
+            color: white;
+        }
+        .link-register {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .link-register a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+        .link-register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <button class="button-google"><a href="/index.html">Entrar com Google</a></button>
+    <button class="button-email" onclick="redirectToRegister()"><a href="/index.html">Cadastrar-se com Email</a></button>
+
+    <div class="link-register">
+        <p>Não tem uma conta? <a href="/cadastro.html" onclick="redirectToRegister()">Cadastre-se aqui</a></p>
+    </div>
+</div>
+
+<script>
+    function redirectToRegister() {
+        window.location.href = 'formulario.html';  // Redireciona para o formulário de cadastro
+    }
+</script>
+
+</body>
+</html>
