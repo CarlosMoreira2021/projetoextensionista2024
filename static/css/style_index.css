@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  background-color: #4285f4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+.left-panel {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-info {
+  margin-bottom: 20px;
+}
+.user-info h2 {
+  margin: 0;
+}
+.user-info p {
+  color: gray;
+}
+.book-list {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+}
+.search-bar button {
+  padding: 10px;
+  background-color: #4285f4;
+  border: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.book-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.book-item input {
+  margin-right: 10px;
+}
+.format-buttons {
+  display: flex;
+}
+.format-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+.pdf-button {
+  background-color: #f4b400;
+  color: white;
+}
+.physical-button {
+  background-color: #34a853;
+  color: white;
+}
+.button-submit {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #34a853;
+  color: white;
+  margin-top: 10px;
+}
+.button-donate {
+  width: 90%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f4a261;
+  color: white;
+  margin-top: 10px;
+  text-decoration: none; /* Remove sublinhado do link */
+  text-align: center; /* Centraliza o texto do link */
+  display: inline-block; /* Permite o padding e outras propriedades */
+}
+.button-donate:hover {
+  background-color: #e38b61; /* Alterar cor ao passar o mouse */
+}
+
+.button-sair {
+  width: 90%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #6461f4;
+  color: white;
+  margin-top: 10px;
+  text-decoration: none; /* Remove sublinhado do link */
+  text-align: center; /* Centraliza o texto do link */
+  display: inline-block; /* Permite o padding e outras propriedades */
+}
+.button-sair:hover {
+  background-color: #6461f4; /* Alterar cor ao passar o mouse */
+}
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  color: gray;
+}
