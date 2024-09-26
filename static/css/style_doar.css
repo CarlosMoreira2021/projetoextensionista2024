@@ -15,6 +15,8 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 400px;
   max-width: 100%; /* Para garantir boa responsividade em telas menores */
+  display: flex; /* Usando flexbox para alinhar os elementos */
+  flex-direction: column; /* Alinhando os elementos em coluna */
 }
 
 h1 {
@@ -102,4 +104,17 @@ h1 {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .form-container {
+    width: 90%; /* Ajusta a largura do formulário para 90% em telas pequenas */
+    padding: 20px;
+  }
+
+  .qr-code-container img {
+    width: 150px; /* Ajusta a largura da imagem do QR code */
+    height: 150px; /* Ajusta a altura da imagem do QR code */
+  }
 }
