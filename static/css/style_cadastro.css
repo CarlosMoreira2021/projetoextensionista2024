@@ -18,14 +18,16 @@ a {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px; /* Limita a largura máxima */
   box-sizing: border-box;
+  margin: 0 15px; /* Adiciona margens laterais em telas menores */
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 22px; /* Fonte um pouco maior em telas normais */
 }
 
 .form-group {
@@ -46,7 +48,7 @@ h2 {
 
 .button-submit {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #34a853;
   color: white;
   border: none;
@@ -59,15 +61,16 @@ h2 {
 @media (max-width: 600px) {
   .container {
     padding: 20px;
-    width: 90%;
+    max-width: 100%;
+    margin: 0 10px; /* Mais estreito nas laterais */
+  }
+
+  h2 {
+    font-size: 18px; /* Reduz o tamanho da fonte do título em telas pequenas */
   }
 
   .button-submit {
     font-size: 14px;
-    padding: 8px;
-  }
-
-  h2 {
-    font-size: 18px;
+    padding: 10px; /* Reduz o padding do botão */
   }
 }
