@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seleção de Livros</title>
+    <link rel="stylesheet" href="/static/css/style_index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Biblioteca Virtual</h1>
+    </header>
+
+    <div class="content">
+      <!-- Painel Lateral -->
+      <div class="left-panel">
+        <div class="user-info">
+          <h2>Bem-vindo, Leitor</h2>
+          <p>Seu Ranking: 1500 pontos</p>
+        </div>
+
+        <!-- Botão para enviar livros escolhidos -->
+        <button class="button-submit" onclick="submitBooks()">
+          Enviar Livros Escolhidos
+        </button>
+
+        <!-- Novo Link "Doe Livros" -->
+        <a href="/doar.html" class="button-donate">Doe livros</a>
+        <a href="/login.html" class="button-sair">Sair</a>
+      </div>
+
+      <!-- Lista de Livros -->
+      <div class="book-list">
+        <!-- Barra de Pesquisa -->
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Busque por um livro..." />
+          <button onclick="searchBook()">
+            🔍
+            <!-- Ícone de Lupa -->
+          </button>
+        </div>
+
+        <!-- Lista Infinita de Livros -->
+        <div id="books-container">
+          <!-- Os livros serão carregados aqui via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/js/index.js"></script>
+    <footer>&copy; 2024 - Biblioteca Virtual</footer>
+  </body>
+</html>
