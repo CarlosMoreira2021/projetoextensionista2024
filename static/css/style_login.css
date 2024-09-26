@@ -7,6 +7,7 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 .container {
   background-color: white;
   padding: 30px;
@@ -15,15 +16,18 @@ body {
   width: 300px;
   text-align: center; /* Centraliza o conteúdo do container */
 }
+
 h1 {
   margin-bottom: 20px;
   color: #4285f4;
   font-size: 24px;
   font-weight: bold;
 }
+
 h2 {
   margin-bottom: 20px;
 }
+
 .button-google,
 .button-email {
   display: block;
@@ -38,19 +42,46 @@ h2 {
   text-align: center;
   text-decoration: none; /* Remove sublinhado do link */
 }
+
 .button-google {
   background-color: #4285f4;
 }
+
 .button-email {
   background-color: #34a853;
 }
+
 .link-register {
   margin-top: 20px;
 }
+
 .link-register a {
   color: #4285f4;
   text-decoration: none;
 }
+
 .link-register a:hover {
   text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .container {
+    width: 90%; /* Reduz a largura do container para ocupar 90% da tela */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px; /* Reduz o tamanho da fonte do título em telas menores */
+  }
+
+  .button-google,
+  .button-email {
+    font-size: 14px; /* Reduz o tamanho da fonte dos botões */
+    padding: 8px; /* Ajusta o padding dos botões para telas menores */
+  }
+
+  .link-register a {
+    font-size: 14px; /* Ajusta o tamanho da fonte do link */
+  }
 }

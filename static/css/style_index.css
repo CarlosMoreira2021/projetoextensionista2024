@@ -8,17 +8,20 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 header {
   background-color: #4285f4;
   color: white;
   padding: 20px;
   text-align: center;
 }
+
 .content {
   display: flex;
   flex: 1;
   overflow: hidden;
 }
+
 .left-panel {
   background-color: white;
   padding: 20px;
@@ -28,30 +31,37 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .user-info {
   margin-bottom: 20px;
 }
+
 .user-info h2 {
   margin: 0;
 }
+
 .user-info p {
   color: gray;
 }
+
 .book-list {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
 }
+
 .search-bar {
   display: flex;
   margin-bottom: 20px;
 }
+
 .search-bar input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px 0 0 5px;
 }
+
 .search-bar button {
   padding: 10px;
   background-color: #4285f4;
@@ -60,6 +70,7 @@ header {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
+
 .book-item {
   display: flex;
   align-items: center;
@@ -70,12 +81,15 @@ header {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .book-item input {
   margin-right: 10px;
 }
+
 .format-buttons {
   display: flex;
 }
+
 .format-buttons button {
   margin-left: 10px;
   padding: 5px 10px;
@@ -84,14 +98,17 @@ header {
   border: none;
   border-radius: 3px;
 }
+
 .pdf-button {
   background-color: #f4b400;
   color: white;
 }
+
 .physical-button {
   background-color: #34a853;
   color: white;
 }
+
 .button-submit {
   width: 100%;
   padding: 15px;
@@ -103,6 +120,7 @@ header {
   color: white;
   margin-top: 10px;
 }
+
 .button-donate {
   width: 90%;
   padding: 15px;
@@ -113,12 +131,13 @@ header {
   background-color: #f4a261;
   color: white;
   margin-top: 10px;
-  text-decoration: none; /* Remove sublinhado do link */
-  text-align: center; /* Centraliza o texto do link */
-  display: inline-block; /* Permite o padding e outras propriedades */
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
 }
+
 .button-donate:hover {
-  background-color: #e38b61; /* Alterar cor ao passar o mouse */
+  background-color: #e38b61;
 }
 
 .button-sair {
@@ -131,16 +150,74 @@ header {
   background-color: #6461f4;
   color: white;
   margin-top: 10px;
-  text-decoration: none; /* Remove sublinhado do link */
-  text-align: center; /* Centraliza o texto do link */
-  display: inline-block; /* Permite o padding e outras propriedades */
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
 }
+
 .button-sair:hover {
-  background-color: #6461f4; /* Alterar cor ao passar o mouse */
+  background-color: #6461f4;
 }
+
 footer {
   background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
   color: gray;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .left-panel {
+    width: 250px;
+  }
+
+  .book-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .format-buttons {
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .search-bar button {
+    padding: 8px;
+  }
+
+  .button-submit, .button-donate, .button-sair {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input, .search-bar button {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .button-submit, .button-donate, .button-sair {
+    width: 100%;
+  }
 }
