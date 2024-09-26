@@ -88,10 +88,11 @@ header {
 
 .format-buttons {
   display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Ajuste para espaçamento uniforme */
 }
 
 .format-buttons button {
-  margin-left: 10px;
   padding: 5px 10px;
   font-size: 12px;
   cursor: pointer;
@@ -178,6 +179,8 @@ footer {
   }
 
   .format-buttons {
+    width: 100%;
+    justify-content: space-between;
     margin-top: 10px;
   }
 
