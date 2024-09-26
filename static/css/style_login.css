@@ -14,6 +14,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   width: 300px;
+  max-width: 90%; /* Garante que o container não exceda 90% da tela em dispositivos pequenos */
   text-align: center; /* Centraliza o conteúdo do container */
 }
 
@@ -67,8 +68,9 @@ h2 {
 /* Responsividade para telas menores */
 @media (max-width: 480px) {
   .container {
-    width: 90%; /* Reduz a largura do container para ocupar 90% da tela */
+    width: 90%; /* Mantém a largura do container em 90% da tela */
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajusta a sombra do container */
   }
 
   h1 {
